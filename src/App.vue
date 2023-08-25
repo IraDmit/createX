@@ -1,32 +1,55 @@
 <template>
   <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
-    <router-view/>
+    <the-header />
+    <the-slider />
+    <the-video />
+    <the-advantages />
+    <the-contact-form />
+    <the-services />
   </div>
 </template>
 
+<script>
+import TheAdvantages from "./components/the-advantages.vue";
+import TheContactForm from "./components/the-contact-form.vue";
+import TheSlider from "./components/the-slider.vue";
+import TheVideo from "./components/the-video.vue";
+import TheServices from "./components/the-services.vue";
+import theHeader from "./navigation/the-header.vue";
+export default {
+  components: {
+    theHeader,
+    TheSlider,
+    TheVideo,
+    TheAdvantages,
+    TheContactForm,
+    TheServices,
+  },
+};
+</script>
+
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+.section-video {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 120px 0;
 }
-
-nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+.section-title {
+  margin-bottom: 24px;
+  font-family: Ubuntu;
+  font-size: 46px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+}
+.section-desc {
+  margin-bottom: 60px;
+  font-family: Ubuntu;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  color: #787a80;
 }
 </style>
