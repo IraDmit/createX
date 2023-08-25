@@ -4,7 +4,7 @@
     <the-slider />
     <the-video />
     <the-advantages />
-    <the-contact-form />
+    <the-contact-form/>
     <the-services />
   </div>
 </template>

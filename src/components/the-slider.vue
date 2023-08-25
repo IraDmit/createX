@@ -222,6 +222,7 @@ export default {
           text-transform: uppercase;
           &:first-of-type {
             border: 1px solid #fff;
+            background-color: unset;
           }
           &:last-of-type {
             background-color: #ff5a30;

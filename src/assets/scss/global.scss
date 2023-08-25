@@ -1,5 +1,7 @@
-*{
-    box-sizing: border-box;
+@import 'font.scss';
+
+* {
+  box-sizing: border-box;
 }
 
 .container {
@@ -14,4 +16,24 @@
   @media (max-width: 768px) {
     padding: 0 15px;
   }
+}
+
+.btn {
+  display: inline-flex;
+  padding: 0px 32px;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+  text-align: center;
+  font-family: Ubuntu;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 44px; /* 314.286% */
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  background-color: #ff5a30;
+  border: 0;
+  border-radius: 4px;
 }
