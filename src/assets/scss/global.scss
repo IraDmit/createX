@@ -1,4 +1,4 @@
-@import 'font.scss';
+@import "font.scss";
 
 * {
   box-sizing: border-box;
@@ -15,6 +15,21 @@
   }
   @media (max-width: 768px) {
     padding: 0 15px;
+  }
+}
+
+.more-information {
+  display: flex;
+  gap: 40px;
+  display: inline-flex;
+  align-items: center;
+  margin-top: 80px;
+  .learn-more {
+    font-family: Ubuntu;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
   }
 }
 
@@ -36,4 +51,9 @@
   background-color: #ff5a30;
   border: 0;
   border-radius: 4px;
+}
+
+.bg-gray {
+  background-color: #f4f5f6;
+  padding: 80px 0;
 }

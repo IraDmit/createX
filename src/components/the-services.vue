@@ -20,7 +20,7 @@
           </div>
         </div>
       </div>
-      <div class="more-services">
+      <div class="more-information">
         <div class="learn-more">Learn more about our services</div>
         <div class="btn">View services</div>
       </div>
@@ -123,7 +123,7 @@ export default {
           0px 80px 80px -20px rgba(154, 156, 165, 0.08);
         font-family: Ubuntu;
         font-size: 20px;
-        font-style: normal;
+        font-style: normal; 
         font-weight: 700;
         line-height: 150%;
         .icon {
@@ -136,7 +136,7 @@ export default {
       }
     }
   }
-  .more-services {
+  .more-information {
     display: flex;
     gap: 40px;
     display: inline-flex;

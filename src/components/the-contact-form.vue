@@ -28,6 +28,7 @@ p {
   margin: 0;
 }
 .form {
+  background-color: #fff;
   width: 100%;
   display: flex;
   flex-direction: column;

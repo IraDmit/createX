@@ -4,8 +4,10 @@
     <the-slider />
     <the-video />
     <the-advantages />
-    <the-contact-form/>
+    <the-contact-form />
     <the-services />
+    <the-projects />
+    <the-support />
   </div>
 </template>
 
@@ -16,6 +18,8 @@ import TheSlider from "./components/the-slider.vue";
 import TheVideo from "./components/the-video.vue";
 import TheServices from "./components/the-services.vue";
 import theHeader from "./navigation/the-header.vue";
+import TheProjects from "./components/the-projects.vue";
+import TheSupport from "./components/the-support.vue";
 export default {
   components: {
     theHeader,
@@ -24,6 +28,8 @@ export default {
     TheAdvantages,
     TheContactForm,
     TheServices,
+    TheProjects,
+    TheSupport,
   },
 };
 </script>
