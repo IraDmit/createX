@@ -123,6 +123,7 @@ export default {
         line-height: 44px;
         letter-spacing: 0.5px;
         text-transform: uppercase;
+        cursor: pointer;
       }
     }
     .box-img {
@@ -136,5 +137,6 @@ export default {
 .more-information {
   display: flex;
   justify-content: center;
+  margin-bottom: 80px;
 }
 </style>

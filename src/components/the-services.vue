@@ -105,6 +105,7 @@ export default {
       justify-content: space-between;
       width: 100%;
       .service {
+        cursor: pointer;
         z-index: 10;
         gap: 24px;
         display: flex;

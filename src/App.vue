@@ -8,6 +8,7 @@
     <the-services />
     <the-projects />
     <the-support />
+    <the-reviews />
   </div>
 </template>
 
@@ -20,6 +21,7 @@ import TheServices from "./components/the-services.vue";
 import theHeader from "./navigation/the-header.vue";
 import TheProjects from "./components/the-projects.vue";
 import TheSupport from "./components/the-support.vue";
+import TheReviews from './components/the-reviews.vue';
 export default {
   components: {
     theHeader,
@@ -30,6 +32,7 @@ export default {
     TheServices,
     TheProjects,
     TheSupport,
+    TheReviews,
   },
 };
 </script>
