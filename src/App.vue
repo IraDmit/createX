@@ -11,6 +11,7 @@
     <the-reviews />
     <the-statistics />
     <the-news/>
+    <the-component-form />
   </div>
 </template>
 
@@ -26,6 +27,7 @@ import TheSupport from "./components/the-support.vue";
 import TheReviews from './components/the-reviews.vue';
 import TheNews from './components/the-news.vue';
 import TheStatistics from './components/the-statistics.vue';
+import TheComponentForm from './components/the-component-form.vue';
 export default {
   components: {
     theHeader,
@@ -39,6 +41,7 @@ export default {
     TheReviews,
     TheNews,
     TheStatistics,
+    TheComponentForm,
   },
 };
 </script>

@@ -76,6 +76,7 @@ export default {
   flex-direction: column;
   align-items: center;
   margin-top: 180px;
+  margin-bottom: 120px;
   .title {
     font-family: Ubuntu;
     font-size: 46px;
