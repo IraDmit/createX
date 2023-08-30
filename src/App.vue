@@ -10,8 +10,9 @@
     <the-support />
     <the-reviews />
     <the-statistics />
-    <the-news/>
+    <the-news />
     <the-component-form />
+    <the-footer />
   </div>
 </template>
 
@@ -24,10 +25,11 @@ import TheServices from "./components/the-services.vue";
 import theHeader from "./navigation/the-header.vue";
 import TheProjects from "./components/the-projects.vue";
 import TheSupport from "./components/the-support.vue";
-import TheReviews from './components/the-reviews.vue';
-import TheNews from './components/the-news.vue';
-import TheStatistics from './components/the-statistics.vue';
-import TheComponentForm from './components/the-component-form.vue';
+import TheReviews from "./components/the-reviews.vue";
+import TheNews from "./components/the-news.vue";
+import TheStatistics from "./components/the-statistics.vue";
+import TheComponentForm from "./components/the-component-form.vue";
+import TheFooter from "./navigation/the-footer.vue";
 export default {
   components: {
     theHeader,
@@ -42,6 +44,7 @@ export default {
     TheNews,
     TheStatistics,
     TheComponentForm,
+    TheFooter,
   },
 };
 </script>

@@ -120,27 +120,32 @@ export default {
     .checkbox {
       width: 16px;
       height: 16px;
-      border: 1px solid #9A9CA5;
+      border: 1px solid #9a9ca5;
       cursor: pointer;
       border-radius: 4px;
       position: absolute;
       &.active {
         background-color: #ff5a30;
         border-color: #ff5a30;
-        &::before{
-            content: '✓';
-            position: absolute;
-            top: -1px;
-            left: 1px;
-            width: 100%;
-            height: 100%;
-            color: #fff;
+        &::before {
+          content: "✓";
+          position: absolute;
+          top: -1px;
+          left: 1px;
+          width: 100%;
+          height: 100%;
+          color: #fff;
         }
       }
     }
-    .checkbox-text{
-        padding-left: 28px;
-        cursor: pointer;
+    .checkbox-text {
+      padding-left: 28px;
+      cursor: pointer;
+      font-family: Ubuntu;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%;
     }
   }
 }
