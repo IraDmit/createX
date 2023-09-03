@@ -13,6 +13,9 @@
     <the-news />
     <the-component-form />
     <the-footer />
+    <div class="go-to-top">
+      <div class="btn"><img src="./assets/images/Up-chevron.svg" /></div>
+    </div>
   </div>
 </template>
 
@@ -63,6 +66,12 @@ export default {
   font-style: normal;
   font-weight: 700;
   line-height: 130%;
+  @media (max-width: 768px) {
+    font-size: 30px;
+  }
+  @media (max-width: 576px) {
+    font-size: 28px;
+  }
 }
 .section-desc {
   margin-bottom: 60px;
@@ -72,5 +81,25 @@ export default {
   font-weight: 400;
   line-height: 150%;
   color: #787a80;
+}
+.go-to-top {
+  position: fixed;
+  display: inline-flex;
+  align-items: flex-end;
+  gap: 16px;
+  bottom: 20px;
+  right: 20px;
+  .up-btn {
+    opacity: 0.6;
+  }
+  .btn {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    img {
+      width: 23px;
+      height: 40px;
+    }
+  }
 }
 </style>

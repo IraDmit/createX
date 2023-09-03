@@ -76,10 +76,7 @@
           <img src="../assets/images/Heart.svg" />
           <div>by Createx Studio</div>
         </div>
-        <div class="go-to-top">
-          <div class="up-btn">GO TO TOP</div>
-          <div class="btn"><img src="../assets/images/Up-chevron.svg" /></div>
-        </div>
+        
       </div>
     </div>
   </footer>
@@ -110,6 +107,8 @@ footer {
     display: flex;
     justify-content: space-between;
     margin-bottom: 49px;
+    gap: 20px;
+    flex-wrap: wrap;
     .company-info {
       .company-desc {
         opacity: 0.6;
@@ -162,6 +161,7 @@ footer {
         }
         .btn {
           border-radius: 0 4px 4px 0;
+            line-height: 44px;
         }
       }
       .note {
@@ -177,6 +177,10 @@ footer {
   .second-row {
     display: flex;
     gap: 125px;
+    @media (max-width: 768px) {
+      gap: 40px;
+    }
+    flex-wrap: wrap;
     .title-col {
       font-family: Ubuntu;
       font-size: 16px;
@@ -222,6 +226,9 @@ footer {
     justify-content: space-between;
     margin-top: 60px;
     align-items: flex-end;
+    @media (max-width: 475px) {
+      flex-wrap: wrap;
+    }
     .dev-contact {
       display: flex;
       font-family: Ubuntu;
@@ -238,24 +245,7 @@ footer {
         opacity: 0.6;
       }
     }
-    .go-to-top {
-      display: inline-flex;
-      align-items: flex-end;
-      gap: 16px;
-      
-      .up-btn {
-        opacity: 0.6;
-      }
-      .btn {
-        width: 40px;
-        height: 40px;
-        padding: 0;
-        img {
-          width: 23px;
-          height: 40px;
-        }
-      }
-    }
+    
   }
 }
 </style>

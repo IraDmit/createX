@@ -141,9 +141,9 @@ export default {
     transform: translateX(-50%);
     bottom: 50px;
     left: 50%;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 179px);
     .dot {
-      width: 179px;
       border-bottom: 2px solid #fff;
       opacity: 0.6;
       cursor: pointer;
@@ -244,6 +244,50 @@ export default {
           background-color: rgba($color: #000000, $alpha: 0.4);
         }
       }
+      @media (max-width: 1230px) {
+        .slide-title {
+          font-size: 55px;
+        }
+        .slide-text {
+          font-size: 16px;
+        }
+        .buttons {
+          .btn {
+            font-size: 14px;
+            line-height: 180%;
+          }
+        }
+      }
+      @media (max-width: 576px) {
+        .slide-title {
+          font-size: 40px;
+        }
+        .slide-text {
+          font-size: 14px;
+        }
+        .buttons {
+          .btn {
+            font-size: 14px;
+            line-height: 180%;
+            padding: 0 5px;
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 1230px) {
+    .dots {
+      grid-template-columns: repeat(4, 150px);
+    }
+  }
+  @media (max-width: 768px) {
+    .dots {
+      grid-template-columns: repeat(4, 100px);
+    }
+  }
+  @media (max-width: 375px) {
+    .dots {
+      grid-template-columns: repeat(4, 70px);
     }
   }
 }

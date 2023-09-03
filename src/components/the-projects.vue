@@ -58,21 +58,26 @@ export default {
   font-weight: 700;
   line-height: 130%;
   margin: 205px 0 60px 0;
-  width: 705px;
+    @media (max-width: 768px) {
+      font-size: 30px;
+    }
+    @media (max-width: 576px) {
+      font-size: 28px;
+    }
 }
 .projects-content {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  // display: flex;
+  // justify-content: space-between;
   .project {
     position: relative;
-    display: flex;
     align-items: center;
-    width: 390px;
-    height: 440px;
+    display: flex;
     padding-bottom: 0px;
     flex-direction: column;
     gap: 16px;
-    flex-shrink: 0;
     overflow: hidden;
     box-shadow: 0px 4px 4px -4px rgba(30, 33, 44, 0.03),
       0px 12px 10px -6px rgba(154, 156, 165, 0.04),
@@ -125,6 +130,21 @@ export default {
         text-transform: uppercase;
         cursor: pointer;
       }
+      @media (max-width: 1230px) {
+        padding: 18px;
+        bottom: -67px;
+        .more {
+          font-size: 12px;
+        }
+        .project-desc {
+          margin-bottom: 15px;
+        }
+      }
+      @media (max-width: 768px){
+        .project-name{
+          font-size: 16px;
+        }
+      }
     }
     .box-img {
       width: 100%;
@@ -132,6 +152,9 @@ export default {
     &:hover .information {
       bottom: 0;
     }
+  }
+  @media (max-width: 768px){
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 .more-information {

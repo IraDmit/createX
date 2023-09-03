@@ -23,4 +23,11 @@
 export default {};
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+iframe {
+  max-width: 1230px;
+  width: 100%;
+}
+@media (max-width: 1100px) {
+}
+</style>

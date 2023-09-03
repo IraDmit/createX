@@ -1,7 +1,7 @@
 <template>
   <div class="container statistics">
     <div class="right-img"></div>
-    <h3 class="title">Some facts and figures</h3>
+    <h3 class="section-title">Some facts and figures</h3>
     <div class="statistics-content">
       <div
         class="statistic"
@@ -52,6 +52,8 @@ export default {
   flex-direction: column;
   align-items: center;
   position: relative;
+  margin: 180px 0 0 0;
+
   .right-img {
     opacity: 0.2;
     background: url(https://s3-alpha-sig.figma.com/img/2483/835d/32bc1f2438a729dbff568ee802b7a86f?Expires=1694390400&Signature=kJg~-c-cCe8TNzD-gtpkc-WzZNcCSyEDqcYuXEi9YBu-xEI8KIcAyB7QskyLjzl-p1vWGygN~I0fsXsIpHulBY9eJxsbj2xFonQYuyu1Qia2jx~9Xz3Okkkxv6rBpXuz0vigV6BecG4~E3~Or~vxYbC-VHFFrJn30RKeYpOXYFRCFFcw~-bD4cib2NL5tpNfUtlv8oPD9ZHHSIHNRBnVNFOLxmt-E1jMulUv6LiQIAXJ0SMf2JQR-Jgo88p7mk4bDfdKdf87Ru0zsVGE8XR~z1QBBL7FmzQVNttUSZCwEjfLkwUpr9p414y68wwWkyFcMOn5GeezqK-6KYwlEdbqFQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4),
@@ -63,14 +65,9 @@ export default {
     left: -70%;
     top: -30%;
     z-index: -1;
-  }
-  .title {
-    margin: 180px 0 60px 0;
-    font-family: Ubuntu;
-    font-size: 46px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 130%;
+    @media (max-width: 768px) {
+      display: none;
+    }
   }
   .statistics-content {
     display: grid;
@@ -115,6 +112,12 @@ export default {
           }
         }
       }
+    }
+    @media (max-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: 475px) {
+      grid-template-columns: repeat(1, 1fr);
     }
   }
 }

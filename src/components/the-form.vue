@@ -148,5 +148,8 @@ export default {
       line-height: 150%;
     }
   }
+  .btn {
+    line-height: 44px;
+  }
 }
 </style>

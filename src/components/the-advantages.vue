@@ -57,8 +57,9 @@ h4 {
   align-items: center;
   margin-bottom: 120px;
   .pros {
-    display: flex;
     gap: 94px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     .plus {
       display: flex;
       flex-direction: column;
@@ -79,6 +80,9 @@ h4 {
           rgba(218, 219, 221, 0.5) 87.85%,
           rgba(218, 219, 221, 0) 100%
         );
+        @media (max-width: 768px) {
+          display: none;
+        }
       }
       .title {
         font-family: Ubuntu;
@@ -87,6 +91,7 @@ h4 {
         font-weight: 700;
         line-height: 150%;
         margin: 24px 0 8px 0;
+        
       }
       .desc {
         font-family: Ubuntu;
@@ -96,6 +101,9 @@ h4 {
         line-height: 160%;
         color: #787a80;
       }
+    }
+    @media (max-width: 768px) {
+      grid-template-columns: repeat(1, 1fr);
     }
   }
 }

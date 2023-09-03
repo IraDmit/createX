@@ -22,6 +22,9 @@ export default {
   .container {
     display: flex;
     justify-content: flex-end;
+    @media (max-width: 768px) {
+      justify-content: center;
+    }
   }
 }
 </style>

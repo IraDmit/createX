@@ -1,7 +1,7 @@
 <template>
   <div class="bg-gray">
     <div class="container content-wrp">
-      <h3 class="title">Supported by 12+ partners</h3>
+      <h3 class="section-title">Supported by 12+ partners</h3>
       <div class="partners">
         <img
           :src="item.icon"
@@ -49,15 +49,13 @@ export default {
   flex-direction: column;
   align-items: center;
   .partners {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 40px;
     .partner {
-      width: 174px;
-      height: 134px;
       filter: grayscale(0%);
-      &:last-of-type{
-          filter: grayscale(100%);
+      &:last-of-type {
+        filter: grayscale(100%);
       }
       &:hover {
         &:not(:last-of-type) {
@@ -67,6 +65,12 @@ export default {
           filter: grayscale(0%);
         }
       }
+    }
+    @media (max-width: 768px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @media (max-width: 425px) {
+      grid-template-columns: repeat(2, 1fr);
     }
   }
   .title {

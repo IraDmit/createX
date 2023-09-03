@@ -10,7 +10,7 @@
               class="slide"
             >
               <div class="left-col">
-                <h3 class="title">What our clients are saying</h3>
+                <h3 class="section-title">What our clients are saying</h3>
                 <img :src="review.icon" class="icon" />
                 <div class="review">
                   <div class="text" :class="{ animation: idx }">
@@ -158,13 +158,21 @@ export default {
   }
   .right-col {
     position: relative;
+    width: 495px;
+    height: 550px;
     .photo {
       position: absolute;
-      width: 495px;
-      height: 550px;
-      bottom: -60;
+      bottom: -60px;
       right: 0;
       border-radius: 4px;
+    }
+  }
+  @media (max-width: 1230px) {
+    .right-col {
+      display: none;
+    }
+    .left-col{
+      max-width: unset;
     }
   }
 }

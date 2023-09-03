@@ -86,6 +86,12 @@ export default {
     font-style: normal;
     font-weight: 700;
     line-height: 130%;
+    @media (max-width: 768px) {
+      font-size: 30px;
+    }
+    @media (max-width: 576px) {
+      font-size: 28px;
+    }
   }
   .desc {
     font-family: Ubuntu;
@@ -94,16 +100,17 @@ export default {
     font-weight: 400;
     line-height: 150%;
     margin: 24px 0 60px 0;
-    color: #787A80;
+    color: #787a80;
   }
   .services {
     display: flex;
     flex-direction: column;
     align-items: center;
     .services-content {
-      display: flex;
-      justify-content: space-between;
-      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(4, 285px);
+      gap: 30px;
+      margin: 0 auto;
       .service {
         cursor: pointer;
         z-index: 10;
@@ -124,7 +131,7 @@ export default {
           0px 80px 80px -20px rgba(154, 156, 165, 0.08);
         font-family: Ubuntu;
         font-size: 20px;
-        font-style: normal; 
+        font-style: normal;
         font-weight: 700;
         line-height: 150%;
         .icon {
@@ -134,6 +141,12 @@ export default {
           color: #fff;
           background: var(--bg-img);
         }
+      }
+      @media (max-width: 1400px) {
+        grid-template-columns: repeat(2, 285px);
+      }
+      @media (max-width: 576px) {
+        grid-template-columns: repeat(1, 285px);
       }
     }
   }

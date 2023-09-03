@@ -59,7 +59,6 @@ p {
       justify-content: center;
       align-items: flex-start;
       gap: 8px;
-      flex-shrink: 0;
       &.message {
         width: calc(100% - 55%);
       }
@@ -100,9 +99,24 @@ p {
       line-height: 44px; /* 314.286% */
       letter-spacing: 0.5px;
       text-transform: uppercase;
-      background-color: #FF5A30;
+      background-color: #ff5a30;
       border: 0;
       border-radius: 4px;
+    }
+  }
+  @media (max-width: 1230px) {
+    width: 95%;
+  }
+  @media (max-width: 768px) {
+    .form-content {
+      flex-direction: column;
+      align-items: center;
+      .field {
+        width: 100%;
+        &.message {
+          width: 100%;
+        }
+      }
     }
   }
 }

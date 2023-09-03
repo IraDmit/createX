@@ -1,6 +1,6 @@
 <template>
   <div class="container news-content">
-    <h3 class="title">Recent news</h3>
+    <h3 class="section-title">Recent news</h3>
     <div class="news">
       <div class="new" v-for="(item, idx) in newsList" :key="'new' + idx">
         <img :src="item.image" class="new-img" />
@@ -96,6 +96,9 @@ export default {
         0px 80px 80px -20px rgba(154, 156, 165, 0.08);
       border-radius: 4px;
       cursor: pointer;
+      img {
+        max-width: 100%;
+      }
       &:first-of-type {
         grid-row: 1 / span 2;
       }
@@ -108,7 +111,7 @@ export default {
           font-weight: 700;
           line-height: 150%;
           color: #1e212c;
-          transition: .3s;
+          transition: 0.3s;
         }
         .info {
           display: inline-flex;
@@ -153,6 +156,15 @@ export default {
         .new-title {
           color: #ff5a30;
         }
+      }
+    }
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+      .new:first-of-type {
+        grid-row: unset;
+      }
+      .new-img {
+        width: 100%;
       }
     }
   }
