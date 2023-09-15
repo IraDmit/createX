@@ -36,8 +36,8 @@
         </transition>
       </div>
       <div class="dots">
-        <div class="prev" @click="prev">prev</div>
-        <div class="next" @click="next">next</div>
+        <div class="prev icon-right" @click="prev"></div>
+        <div class="next icon-right" @click="next"></div>
       </div>
     </div>
   </div>
@@ -49,27 +49,24 @@ export default {
     return {
       reviewsList: [
         {
-          image:
-            "https://s3-alpha-sig.figma.com/img/8950/f5b3/dee44805efdefe9dee6999e4c5df751d?Expires=1694390400&Signature=QCley5po3~mrmZBUezkk4qc12kg6FFkdrD0XEA-Kmhgw5A4rEjboxDEKl~QdGuArl2ul~FRa~1k7MLMsjE2YV81mApxLUH6wqgmsvEnhJehRMNgH35yeIDdq72CAWwCB-Ofg7rb8Uue4Rgyq~QiqvRGV8t-x0DbiFIYeCKQ9gS4TI71JaKLXylH5CzLjaWspzG68KAwGSpGl04egGYUs-FJlbczqInJOh02PIAmfqIpyk3J6mUTvQrCEI6iNqT3a7B19uw3PI~38EzS4bjQ9jBuTVmPK8PW0g1RfAcuvlWVdUzY4Jd3DCcg0cUV4lRrWw~c~i8KwUiGCwima9~qwTg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
-          icon: "https://s3-alpha-sig.figma.com/img/201d/164a/6c51faf663c18e40fa229b1efaaeb6e5?Expires=1694390400&Signature=Qm99j3yD8EQeCTiRgVTB2r-OnZCRrCtW38ty2BQwb0TKSkCopBcWxAXCksWonzCLHGInZ0KG4FbHnFCvOvqzJMpBsYk3X~e32gY~tVE~5JCf85U0czhhwPHW6p1tRKRUHyX7EAmlC~smBDppbxxSuuYMjAmKicYtdxPjQvwHDNIeZXqli-AIPsnqMd0lXssA8hZHj4T2JZ3OvvvgUYx7TrLOYfCB2D5uU02Ce1DIMKtcv~XbZr~B53UZvSb67e5ces0uihC-EOORUgX58~W3ncZYeICU1DP8ehEk0jFAa~~J7pzUGSjfwsXqECx~OHyQBOocwSpGM0Hwtbf4Re7VeA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+          image: require("../assets/images/photo-img.jpg"),
+          icon: require("../assets/images/profile-image.png"),
           review:
             "Ipsum aute sunt aliquip aute et occaecat. Anim minim do cillum eiusmod enim. Consectetur magna cillum consequat minim  laboris cillum laboris voluptate minim proident exercitation ullamco. ",
           name: "Shawn Edwards",
           position: "Position, Company name",
         },
         {
-          image:
-            "https://s3-alpha-sig.figma.com/img/8950/f5b3/dee44805efdefe9dee6999e4c5df751d?Expires=1694390400&Signature=QCley5po3~mrmZBUezkk4qc12kg6FFkdrD0XEA-Kmhgw5A4rEjboxDEKl~QdGuArl2ul~FRa~1k7MLMsjE2YV81mApxLUH6wqgmsvEnhJehRMNgH35yeIDdq72CAWwCB-Ofg7rb8Uue4Rgyq~QiqvRGV8t-x0DbiFIYeCKQ9gS4TI71JaKLXylH5CzLjaWspzG68KAwGSpGl04egGYUs-FJlbczqInJOh02PIAmfqIpyk3J6mUTvQrCEI6iNqT3a7B19uw3PI~38EzS4bjQ9jBuTVmPK8PW0g1RfAcuvlWVdUzY4Jd3DCcg0cUV4lRrWw~c~i8KwUiGCwima9~qwTg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
-          icon: "https://s3-alpha-sig.figma.com/img/201d/164a/6c51faf663c18e40fa229b1efaaeb6e5?Expires=1694390400&Signature=Qm99j3yD8EQeCTiRgVTB2r-OnZCRrCtW38ty2BQwb0TKSkCopBcWxAXCksWonzCLHGInZ0KG4FbHnFCvOvqzJMpBsYk3X~e32gY~tVE~5JCf85U0czhhwPHW6p1tRKRUHyX7EAmlC~smBDppbxxSuuYMjAmKicYtdxPjQvwHDNIeZXqli-AIPsnqMd0lXssA8hZHj4T2JZ3OvvvgUYx7TrLOYfCB2D5uU02Ce1DIMKtcv~XbZr~B53UZvSb67e5ces0uihC-EOORUgX58~W3ncZYeICU1DP8ehEk0jFAa~~J7pzUGSjfwsXqECx~OHyQBOocwSpGM0Hwtbf4Re7VeA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+          image: require("../assets/images/photo-img.jpg"),
+          icon: require("../assets/images/profile-image.png"),
           review:
             "gdlfkgdkf;alsdkf;sldg;sIpsum aute sunt aliquip aute et occaecat. Anim minim do cillum eiusmod enim. Consectetur magna cillum consequat minim  laboris cillum laboris voluptate minim proident exercitation ullamco. ",
           name: "Edwards",
           position: "Position, Company name",
         },
         {
-          image:
-            "https://s3-alpha-sig.figma.com/img/8950/f5b3/dee44805efdefe9dee6999e4c5df751d?Expires=1694390400&Signature=QCley5po3~mrmZBUezkk4qc12kg6FFkdrD0XEA-Kmhgw5A4rEjboxDEKl~QdGuArl2ul~FRa~1k7MLMsjE2YV81mApxLUH6wqgmsvEnhJehRMNgH35yeIDdq72CAWwCB-Ofg7rb8Uue4Rgyq~QiqvRGV8t-x0DbiFIYeCKQ9gS4TI71JaKLXylH5CzLjaWspzG68KAwGSpGl04egGYUs-FJlbczqInJOh02PIAmfqIpyk3J6mUTvQrCEI6iNqT3a7B19uw3PI~38EzS4bjQ9jBuTVmPK8PW0g1RfAcuvlWVdUzY4Jd3DCcg0cUV4lRrWw~c~i8KwUiGCwima9~qwTg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
-          icon: "https://s3-alpha-sig.figma.com/img/201d/164a/6c51faf663c18e40fa229b1efaaeb6e5?Expires=1694390400&Signature=Qm99j3yD8EQeCTiRgVTB2r-OnZCRrCtW38ty2BQwb0TKSkCopBcWxAXCksWonzCLHGInZ0KG4FbHnFCvOvqzJMpBsYk3X~e32gY~tVE~5JCf85U0czhhwPHW6p1tRKRUHyX7EAmlC~smBDppbxxSuuYMjAmKicYtdxPjQvwHDNIeZXqli-AIPsnqMd0lXssA8hZHj4T2JZ3OvvvgUYx7TrLOYfCB2D5uU02Ce1DIMKtcv~XbZr~B53UZvSb67e5ces0uihC-EOORUgX58~W3ncZYeICU1DP8ehEk0jFAa~~J7pzUGSjfwsXqECx~OHyQBOocwSpGM0Hwtbf4Re7VeA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+          image: require("../assets/images/photo-img.jpg"),
+          icon: require("../assets/images/profile-image.png"),
           review:
             "двпловадплжавдплжвдапбIpsum aute sunt aliquip aute et occaecat. Anim minim do cillum eiusmod enim. Consectetur magna cillum consequat minim  laboris cillum laboris voluptate minim proident exercitation ullamco. ",
           name: "Shawn",
@@ -97,6 +94,19 @@ export default {
 .bg-gray {
   padding-bottom: 0;
 }
+
+.container {
+  position: relative;
+}
+.dots {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  .prev.icon-right {
+    transform: rotate(180deg);
+  }
+}
+
 .slide {
   display: flex;
   justify-content: space-between;
@@ -139,13 +149,6 @@ export default {
         line-height: 150%;
         color: #787a80;
       }
-      .dots {
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        display: flex;
-        gap: 12px;
-      }
     }
   }
   .title {
@@ -171,7 +174,7 @@ export default {
     .right-col {
       display: none;
     }
-    .left-col{
+    .left-col {
       max-width: unset;
     }
   }

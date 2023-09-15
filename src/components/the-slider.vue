@@ -67,7 +67,7 @@ export default {
           title: "CREATE<i>X</i> CONSTRUCTION",
           text: "Cras ultrices leo vitae non viverra. Fringilla nisi quisque consequat, dignissim vitae proin ipsum sed. Pellentesque nec turpis purus eget pellentesque integer ipsum elementum felis. ",
           image:
-            "https://i.pinimg.com/564x/aa/f7/05/aaf705540abd88aaac0776147da46d02.jpg",
+            "https://amiel.club/uploads/posts/2022-03/1647689819_1-amiel-club-p-kartinki-stroiki-1.jpg",
           buttons: [
             {
               text: "Learn more about us",
@@ -79,7 +79,7 @@ export default {
         {
           title: "CREATE<i>X</i> CONSTRUCTION",
           text: "Cras ultrices leo vitae non viverra. Fringilla nisi quisque consequat, dignissim vitae proin ipsum sed. Pellentesque nec turpis purus eget pellentesque integer ipsum elementum felis. ",
-          image: "https://oir.mobi/uploads/posts/2020-01/1578327642_1-7.jpg",
+          image: "https://kartinkof.club/uploads/posts/2022-09/1662550782_1-kartinkof-club-p-novie-i-krasivie-kartinki-stroika-1.jpg",
           buttons: [
             {
               text: "Learn more about us",
@@ -92,7 +92,7 @@ export default {
           title: "CREAT<i>E</i>X CONSTRUCTION",
           text: "Cras ultrices leo vitae non viverra. Fringilla nisi quisque consequat, dignissim vitae proin ipsum sed. Pellentesque nec turpis purus eget pellentesque integer ipsum elementum felis. ",
           image:
-            "https://i.pinimg.com/564x/57/69/26/5769266f5cf32a5959015831b643c4bc.jpg",
+            "https://oir.mobi/uploads/posts/2021-03/1616983433_11-p-stroika-fon-11.jpg",
           buttons: [
             {
               text: "Learn more about us",
@@ -105,7 +105,7 @@ export default {
           title: "CREATE<i>X</i> CONSTRUCTION",
           text: "Cras ultrices leo vitae non viverra. Fringilla nisi quisque consequat, dignissim vitae proin ipsum sed. Pellentesque nec turpis purus eget pellentesque integer ipsum elementum felis. ",
           image:
-            "https://i.pinimg.com/564x/e5/3d/2d/e53d2dc8b82e9f13c6970ecb1cbad709.jpg",
+            "https://concreteunion.ru/wp-content/uploads/2020/05/1-22.jpg",
           buttons: [
             {
               text: "Learn more about us",

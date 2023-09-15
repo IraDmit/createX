@@ -27,17 +27,17 @@ export default {
       advantages: [
         {
           title: "Quality",
-          icon: "./src/assets/img/Group.svg",
+          icon: require("../assets/images/Group.svg"),
           text: "Culpa nostrud commodo ea consequat aliquip reprehenderit. Veniam velit nostrud aliquip sunt.",
         },
         {
           title: "Safety",
-          icon: "./src/assets/images/ic-hand.svg",
+          icon: require("../assets/images/ic-hand.svg"),
           text: "Anim reprehenderit sint voluptate exercitation adipisicing laborum adipisicing. Minim empor est ea.",
         },
         {
           title: "Comfort",
-          icon: "./src/assets/images/tapki.svg",
+          icon: require("../assets/images/tapki.svg"),
           text: "Sit veniam aute dolore adipisicing nulla sit culpa. Minim mollit voluptate ullamco proident ea ad.",
         },
       ],

@@ -76,7 +76,6 @@
           <img src="../assets/images/Heart.svg" />
           <div>by Createx Studio</div>
         </div>
-        
       </div>
     </div>
   </footer>
@@ -87,11 +86,11 @@ export default {
   data() {
     return {
       mediaList: [
-        { icon: "../assets/images/Whatsapp.svg" },
-        { icon: "../assets/images/Messanger.svg" },
-        { icon: "../assets/images/Facebook.svg" },
-        { icon: "../assets/images/Twitter.svg" },
-        { icon: "../assets/images/YouTube.svg" },
+        { icon: require("../assets/images/Whatsapp.svg") },
+        { icon: require("../assets/images/Messanger.svg") },
+        { icon: require("../assets/images/Facebook.svg") },
+        { icon: require("../assets/images/Twitter.svg") },
+        { icon: require("../assets/images/YouTube.svg") },
       ],
     };
   },
@@ -161,7 +160,7 @@ footer {
         }
         .btn {
           border-radius: 0 4px 4px 0;
-            line-height: 44px;
+          line-height: 44px;
         }
       }
       .note {
@@ -245,7 +244,6 @@ footer {
         opacity: 0.6;
       }
     }
-    
   }
 }
 </style>

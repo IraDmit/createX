@@ -4,7 +4,7 @@
       <div class="logo">
         <img src="../assets/images/logo.svg" alt="../assets/images/logo.svg" />
       </div>
-      <div class="burger" @click="isOpen = !isOpen">|||</div>
+      <div class="burger icon-menu" @click="isOpen = !isOpen"></div>
     </div>
     <aside class="header_content" :class="{ open: isOpen }">
       <div class="links">

@@ -52,8 +52,7 @@ export default {
   flex-direction: column;
   align-items: center;
   position: relative;
-  margin: 180px 0 0 0;
-
+  margin-top: 180px ;
   .right-img {
     opacity: 0.2;
     background: url(https://s3-alpha-sig.figma.com/img/2483/835d/32bc1f2438a729dbff568ee802b7a86f?Expires=1694390400&Signature=kJg~-c-cCe8TNzD-gtpkc-WzZNcCSyEDqcYuXEi9YBu-xEI8KIcAyB7QskyLjzl-p1vWGygN~I0fsXsIpHulBY9eJxsbj2xFonQYuyu1Qia2jx~9Xz3Okkkxv6rBpXuz0vigV6BecG4~E3~Or~vxYbC-VHFFrJn30RKeYpOXYFRCFFcw~-bD4cib2NL5tpNfUtlv8oPD9ZHHSIHNRBnVNFOLxmt-E1jMulUv6LiQIAXJ0SMf2JQR-Jgo88p7mk4bDfdKdf87Ru0zsVGE8XR~z1QBBL7FmzQVNttUSZCwEjfLkwUpr9p414y68wwWkyFcMOn5GeezqK-6KYwlEdbqFQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4),
@@ -73,6 +72,7 @@ export default {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 48px;
+    align-items: center;
     .statistic {
       position: relative;
       width: 100%;

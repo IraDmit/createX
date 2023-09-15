@@ -32,17 +32,17 @@ export default {
         {
           title: "Red Finger Building",
           desc: "Business Centers",
-          img: "https://s3-alpha-sig.figma.com/img/bcc0/76f1/e55e41c3618d544882c733c9df6994fc?Expires=1693785600&Signature=Fg8xjUuhMbi8fa7mmkd7ALpOESE15EPL7Krt1ZnuKGu-BZWgpCVlauj7~2s7XmXsj1M1xEKb8aI~EWWYtrDeLoJLE6KwF1YQdjmea9rK5BKnZEXNC2UqUYJSWx93JXYxTr0g57077S1lD~weDe2Ut12AijC4vjg5z8~IZvCb2CCN3Mb-CV71Ie~~LqcXEd7jnf6cBww-egBoxgDf0snrqua6HGtze9rRV4YW5Gm5nxyLa7Gfl9mxPX4UlyxPlARgaokDBPOTa1XoNgXr~ZWRfwCGCLs5Bp83S6Epx~aOdD3jtqaQmWmatWGaz8ba4xqUTZ3UCj4hDCHoxPJpCgkxOA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+          img: require("../assets/images/red-build.jpg"),
         },
         {
           title: "Cubes Building",
           desc: "Business Centers",
-          img: "https://s3-alpha-sig.figma.com/img/2311/78ad/421618d5ac84c5165746c5f0e741ece2?Expires=1693785600&Signature=L2NkruOXYkCq-qK5Z6AsnIytQg42ljO0oT2k5bgvJje01GfTq9-zFy5XaW1UUSEEv~KPFTLSEZ0O9r7gLo~h6uRetTDhW58rZ6srQZJPN5ta54mzcosVxE~cDd4mVc9mPyEuz~uxZxxanjnsv30iigHn0JAcZxM9SFByo4ygsrXup-jM4H2wZucTkvjalODzxy-7TldGWd9kAs4GovS9HVZANeSsI1PIEBxy7YxYU-1i9My9mA55C3Ns8Ib1nbORXE999Sv073tJVUYFjqHVSYgWQ8YChbhilFs9bCl2pS90-DQ-x2rLMQAGjnnEuKZ~lpRHQss7dM8~ubn2NDn4sw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+          img: require("../assets/images/cubes0build.png"),
         },
         {
           title: "The Pencil Building",
           desc: "Stores & Malls",
-          img: "https://s3-alpha-sig.figma.com/img/83e8/83c7/e31ecaae040c14943844c1fc4bafbe3a?Expires=1693785600&Signature=FG7bcMaWpHDBE7Fy8mj0AtZM9IvCtlp-puW95QahzU9XHSdMRW-2hGgcSBLSc7vlYpXChlb-v5gNby0gzboQB7FrPAO-9VoLqm27D5KxGRtNYniLXnlWxsYyHAdI2B8VF2ZlMbClWJqxCuuOkJqcOcBGObmIxlS6lJhE6GT3TAcQ744z5B0Ub8Xg1xby7uKxWFA~-OWP~FL8T6X7xxTVPnaV2CyluAzrO--GiIfbWlTvKUSLPOdRTve9z8E9h9~mVkl20y1zTDGay61bP8AtBs3tnh3DEsTzct-cchrQo1BbOtBWw5~KCtylh0DBT~ceGLn1ls06Uqcg9VnuoTON9w__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+          img: require("../assets/images/pencil-build.png"),
         },
       ],
     };
@@ -58,12 +58,12 @@ export default {
   font-weight: 700;
   line-height: 130%;
   margin: 205px 0 60px 0;
-    @media (max-width: 768px) {
-      font-size: 30px;
-    }
-    @media (max-width: 576px) {
-      font-size: 28px;
-    }
+  @media (max-width: 768px) {
+    font-size: 30px;
+  }
+  @media (max-width: 576px) {
+    font-size: 28px;
+  }
 }
 .projects-content {
   display: grid;
@@ -84,6 +84,9 @@ export default {
       0px 30px 24px -10px rgba(154, 156, 165, 0.05),
       0px 80px 80px -20px rgba(154, 156, 165, 0.08);
     border-radius: 4px;
+    img {
+      height: 416px;
+    }
     .information {
       position: absolute;
       display: flex;
@@ -140,8 +143,8 @@ export default {
           margin-bottom: 15px;
         }
       }
-      @media (max-width: 768px){
-        .project-name{
+      @media (max-width: 768px) {
+        .project-name {
           font-size: 16px;
         }
       }
@@ -153,7 +156,7 @@ export default {
       bottom: 0;
     }
   }
-  @media (max-width: 768px){
+  @media (max-width: 768px) {
     grid-template-columns: repeat(1, 1fr);
   }
 }
